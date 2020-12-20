@@ -13,6 +13,12 @@
 body {
   font-family: "Langar", cursive;
   margin: 0;
+  transition: transform 0.3s ease;
+}
+
+body.show-nav {
+  /* Uses the width of the navigation bar. */
+  transform: translateX(200px);
 }
 
 nav {
