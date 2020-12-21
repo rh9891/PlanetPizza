@@ -1,9 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Langar&display=swap");
+@font-face {
+  font-family: "Fenice Std Regular";
+  src: url("assets/fonts/FeniceStd-Regular.otf");
+}
+
+@font-face {
+  font-family: "Fenice Std Bold";
+  src: url("assets/fonts/FeniceStd-Bold.otf");
+}
+
+@font-face {
+  font-family: "Fenice Std Oblique";
+  src: url("assets/fonts/FeniceStd-Oblique.otf");
+}
 
 :root {
   --modal-duration: 1s;
-  --primary-color: #c76550;
-  --secondary-color: #50b2c7;
+  --primary-color: #c92b33;
+  --secondary-color: #f3d34b;
 }
 
 * {
@@ -11,7 +24,8 @@
 }
 
 body {
-  font-family: "Langar", cursive;
+  font-family: "Fenice Std Regular", serif;
+  /* background-color: red; */
   margin: 0;
   transition: transform 0.3s ease;
 }
@@ -79,6 +93,7 @@ header {
 }
 
 header h1 {
+  font-family: "Fenice Std Bold", serif;
   margin: 0;
 }
 
@@ -114,10 +129,15 @@ button:focus {
 }
 
 .container {
+  /* background-color: red; */
   padding: 15px;
   margin: 0 auto;
   max-width: 100%;
   width: 800px;
+}
+
+h2 {
+  font-family: "Fenice Std Bold", serif;
 }
 
 .modal-container {
