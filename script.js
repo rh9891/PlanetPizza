@@ -13,3 +13,8 @@ open.addEventListener("click", () => modal.classList.add("show-modal"));
 
 // Hide modal (click event for X button).
 close.addEventListener("click", () => modal.classList.remove("show-modal"));
+
+// Hide modal (click event occurring outside of the X button).
+window.addEventListener("click", (event) =>
+  event.target == modal ? modal.classList.remove("show-modal") : false
+);
