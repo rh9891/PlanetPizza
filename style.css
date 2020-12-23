@@ -25,6 +25,10 @@
 
 body {
   font-family: "Fenice Std Regular", serif;
+  background-image: url(assets/images/pizzaToppings.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin: 0;
   transition: left 0.3s ease;
   position: relative;
@@ -122,6 +126,10 @@ button:focus {
   outline: none;
 }
 
+button#open.cta-btn {
+  background-color: #2c2c2c;
+}
+
 .toggle {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -139,10 +147,16 @@ button:focus {
   margin: 0 auto;
   max-width: 100%;
   width: 800px;
+  z-index: 1;
 }
 
 h2 {
   font-family: "Fenice Std Bold", serif;
+  color: #ffffff;
+}
+
+p {
+  color: var(--secondary-color);
 }
 
 .modal-container {
