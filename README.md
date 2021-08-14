@@ -54,8 +54,8 @@ THEN
 
 Listed below are the frameworks, libraries, and guides that made building this application possible:
 
+- [CSS/JS Modal](https://www.w3schools.com/howto/howto_css_modals.asp)
 - [JavaScript](https://www.w3schools.com/js/default.asp)
-- []()
 - []()
 - [Traversy Media Tutorials](https://www.traversymedia.com)
 
