@@ -16,38 +16,39 @@
 
 ## Description
 
+You Want A Pizza Me? provides good food, good times, and a love for all things Seinfeld. All of our ingredients are locally sourced (when possible), organic, and made fresh right in our kitchen. Dining in or just ordering from any of our locations is a marvel...exactly what you'd expect from an episode of Seinfeld.
+
+The application features a dynamic menu slider and modal created through the use of JavaScript, CSS, and HTML.
+
 ## User Story
 
 ```
-AS A
-I WANT
-SO THAT I
+AS A customer
+I WANT an accessible menu and a sign up form
+SO THAT I can clearly decide what I want to order and sign up for the restaurant's newsletter for more information.
 ```
 
 ## Features of the Application
 
 ```
-GIVEN
-WHEN
-THEN
+GIVEN a landing page for a restaurant's menu
+WHEN I click on the hamburger icon
+THEN I will be presented with a menu slider and differing tabs.
 
-WHEN
-THEN
+WHEN I click on the Sign Up button
+THEN I will be directed to sign up for the restaurant's newsletter.
 
-WHEN
-THEN
+WHEN I fill out the newsletter form and click Submit
+THEN the modal will close and the page will be refreshed.
 ```
 
 ## Preview of You Want A Pizza Me?
 
 ![You Want A Pizza Me? Landing Page](assets/images/youWantAPizzaMeLandingPage.png)
 
-![You Want A Pizza Me? Modal](assets/images/youWantAPizzaMeModal.png)
-
 ## Links
 
 - [Deployed Application](https://rh9891.github.io/YouWantAPizzaMe/)
-
 - [Github Repository](https://github.com/rh9891/YouWantAPizzaMe)
 
 ## Built Using
@@ -56,7 +57,7 @@ Listed below are the frameworks, libraries, and guides that made building this a
 
 - [CSS/JS Modal](https://www.w3schools.com/howto/howto_css_modals.asp)
 - [JavaScript](https://www.w3schools.com/js/default.asp)
-- []()
+- [JavaScript HTML DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
 - [Traversy Media Tutorials](https://www.traversymedia.com)
 
 ## License
