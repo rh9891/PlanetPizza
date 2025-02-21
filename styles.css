@@ -1,0 +1,17 @@
+:root {
+    --header-height: 3.5rem;
+
+    /* HSL color mode */
+    --hue-color: 152;
+    --primary-color: hsl(var(--hue-color), 41%, 10%);
+    --primary-color-alt: hsl(var(--hue-color), 41%, 30%);
+    --title-color: hsl(var(--hue-color), 41%, 50%);
+    --text-color: hsl(var(--hue-color), 41%, 70%);
+    --text-color-light: hsl(var(--hue-color), 41%, 90%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #FFF;
+
+    --body-font: 'Poppins', sans-serif;
+    --title-font: 'Poppins', sans-serif;
+    --subtitle-font: 'Poppins', sans-serif;
+}
