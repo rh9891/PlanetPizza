@@ -41,11 +41,11 @@
         margin: 0;
         padding: 0;
     }
-    
+
     html {
         scroll-behavior: smooth;
     }
-    
+
     body {
         font-family: var(--body-font), serif;
         font-size: var(--font-sm);
