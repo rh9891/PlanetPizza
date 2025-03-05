@@ -141,7 +141,6 @@ img {
 
 .nav__logo {
     color: var(--primary-color);
-    font-family: var(--title-font);
     font-size: var(--font-md);
     font-weight: var(--font-semi-bold);
     display: flex;
