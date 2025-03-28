@@ -532,3 +532,32 @@ img {
 .recently-added__description {
     margin-bottom: 2rem;
 }
+
+.newsletter__container {
+    position: relative;
+    background-color: hsl(19, 24%, 15%);
+    border-radius: 2.5rem;
+    padding: 5rem 1rem 3rem;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.newsletter__img {
+    width: 150px;
+    position: absolute;
+    top: -2rem;
+    left: -4rem;
+}
+
+.newsletter__data .section___title {
+    margin-bottom: 2rem;
+}
+
+.newsletter__form {
+    background-color: #FFFFFF;
+    padding: 5px 5px 5px 16px;
+    border-radius: 4rem;
+    display: flex;
+    column-gap: 0.5rem;
+}
