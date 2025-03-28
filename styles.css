@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Fenice Std Regular";
+    src: url("assets/fonts/FeniceStd-Regular.otf");
+}
+
+@font-face {
+    font-family: "Fenice Std Bold";
+    src: url("assets/fonts/FeniceStd-Bold.otf");
+}
+
+@font-face {
+    font-family: "Fenice Std Oblique";
+    src: url("assets/fonts/FeniceStd-Oblique.otf");
+}
+
 :root {
     --header-height: 3.5rem;
 
@@ -13,7 +28,7 @@
 
     --body-font: 'Poppins', sans-serif;
     --title-font: 'Poppins', sans-serif;
-    --subtitle-font: 'Poppins', sans-serif;
+    --subtitle-font: 'Fenice Std Regular', serif;
 
     --font-2xl: 2.5rem;
     --font-xl: 2rem;
@@ -295,7 +310,7 @@ img {
 }
 
 @media screen and (min-width: 576px) {
-    .home__container, .about__container {
+    .home__container, .about__container, .recently-added__container {
         grid-template-columns: 0.7fr;
         justify-content: center;
     }
@@ -489,4 +504,31 @@ img {
     .popular .section___title, .popular .section__subtitle {
         text-align: center;
     }
+}
+
+.recently-added__container {
+    row-gap: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .recently-added__container {
+        grid-template-columns: 350px 480px;
+        align-items: center;
+        column-gap: 7rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.recently-added__data {
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .recently-added__data {
+        text-align: initial;
+    }
+}
+
+.recently-added__description {
+    margin-bottom: 2rem;
 }
