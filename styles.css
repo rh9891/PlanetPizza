@@ -759,3 +759,32 @@ img {
     font-size: var(--font-xs);
     color: var(--text-color-light);
 }
+
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 12px hsla(19, 64%, 24%, 0.1);
+    display: inline-flex;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+    z-index: 1000;
+    transition: bottom 0.3s, transform 0.3s, background-color 0.4s;
+}
+
+.scrollup:hover {
+    transform: translateY(-0.25rem);
+}
+
+@media screen and (min-width: 1024px) {
+    .scrollup {
+        right: 3rem;
+    }
+}
+
+.show-scroll {
+    bottom: 3rem;
+}
