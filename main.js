@@ -18,3 +18,27 @@ if (navClose) {
 navLink.forEach(link => link.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
 }));
+
+const scrollHeader = () => {
+    const header = document.getElementById('header');
+
+    if (this.scrollY >= 50) {
+        header.classList.add('bg-header');
+    } else {
+        header.classList.remove('bg-header');
+    }
+}
+
+window.addEventListener('scroll', scrollHeader)
+
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up');
+
+    if (this.scrollY >= 350) {
+        scrollUp.classList.add('show-scroll');
+    } else {
+        scrollUp.classList.remove('show-scroll');
+    }
+}
+
+window.addEventListener('scroll', scrollUp)
