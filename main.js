@@ -17,4 +17,4 @@ if (navClose) {
 
 navLink.forEach(link => link.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
-}
+}));
