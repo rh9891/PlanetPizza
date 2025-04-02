@@ -41,11 +41,32 @@ const scrollUp = () => {
     }
 }
 
-const themeButton = document.getElementById('theme-button');
-themeButton.addEventListener('click', (e) => {
-    document.body.classList.toggle('dark-theme');
-    themeButton.classList.replace('fa--moon', 'fa-sun');
-    localStorage.setItem('theme', 'dark-theme')
-})
-
 window.addEventListener('scroll', scrollUp)
+
+const themeButton = document.getElementById('theme-button');
+
+if (localStorage.getItem('theme') === 'dark-theme') {
+    darkMode();
+} else {
+    lightMode();
+}
+
+themeButton.addEventListener('click', () => {
+    if (document.body.classList.contains('dark-theme')) {
+        lightMode();
+    } else {
+        darkMode();
+    }
+});
+
+function darkMode() {
+    document.body.classList.add('dark-theme');
+    themeButton.classList.replace('fa-moon', 'fa-sun');
+    localStorage.setItem('theme', 'dark-theme')
+}
+
+function lightMode() {
+    document.body.classList.remove('dark-theme');
+    themeButton.classList.replace('fa-sun', 'fa-moon');
+    localStorage.setItem('theme', 'light-theme')
+}
