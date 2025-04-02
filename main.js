@@ -29,7 +29,31 @@ const scrollHeader = () => {
     }
 }
 
-window.addEventListener('scroll', scrollHeader)
+window.addEventListener('scroll', scrollHeader);
+
+const activeLink = () => {
+    const section = document.querySelectorAll('section');
+    const navLink = document.querySelectorAll('.nav__link');
+
+    let current = 'home';
+
+    section.forEach(section => {
+        const sectionTop = section.offsetTop;
+
+        if (scrollY >= sectionTop - 60) {
+            current = section.getAttribute('id')
+        }
+    });
+
+    navLink.forEach(link => {
+        link.classList.remove('active-link');
+        if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active-link');
+        }
+    });
+}
+
+window.addEventListener('scroll', activeLink);
 
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up');
