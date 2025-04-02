@@ -110,6 +110,10 @@ body.dark-theme {
     --accent-color: var(--atlantis);
 }
 
+.dark-theme .bg-header, .dark-theme .popular__card, .dark-theme .scrollup {
+    box-shadow: 0 4px 15px rgba(172, 157, 249, 0.3), 0 0 8px rgba(105, 60, 120, 0.5);
+}
+
 .container {
     max-width: 1024px;
     margin-inline: 1.5rem;
@@ -159,6 +163,10 @@ body.dark-theme {
 @media screen and (max-width: 340px) {
     .home__title, .section__title {
         font-size: 2rem;
+    }
+
+    .section___title {
+        margin: 0 1.5rem 1.5rem;
     }
 }
 
@@ -261,9 +269,13 @@ body.dark-theme {
         left: 0;
         background-color: var(--body-color);
         width: 100%;
-        box-shadow: 0 8px 20px hsla(26, 50%, 15%, 0.2);
+        box-shadow: 0 4px 12px rgba(172, 157, 249, 0.2), 0 1px 5px rgba(0, 0, 0, 0.1);
         padding-block: 3.5rem;
         transition: top .4s;
+    }
+
+    .dark-theme .nav__menu {
+        box-shadow: 0 4px 15px rgba(172, 157, 249, 0.3), 0 0 8px rgba(105, 60, 120, 0.5);
     }
 }
 
@@ -322,7 +334,7 @@ body.dark-theme {
 }
 
 .bg-header {
-    box-shadow: 0 2px 8px hsla(26, 50%, 15%, 0.2);
+    box-shadow: 0 4px 12px rgba(172, 157, 249, 0.2), 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .active-link {
@@ -484,7 +496,7 @@ body.dark-theme {
     position: relative;
     background-color: var(--container-color);
     padding: 2rem 2rem 1rem;
-    box-shadow: 0 8px 20px hsla(19, 64%, 48%, 0.08);
+    box-shadow: 0 4px 10px rgba(35, 99, 131, 0.15), 0 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.4s;
@@ -527,7 +539,7 @@ body.dark-theme {
     border-radius: 50%;
     color: #FFFFFF;
     font-size: 1.25rem;
-    box-shadow: 0 4px 20px hsla(19, 64%, 20%, 0.2);
+    box-shadow: 0 3px 8px rgba(105, 60, 120, 0.3), 0 0 4px rgba(236, 233, 255, 0.5);
     transition: background 0.3s;
 }
 
@@ -833,7 +845,7 @@ body.dark-theme {
     right: 1rem;
     bottom: -50%;
     background-color: var(--container-color);
-    box-shadow: 0 4px 12px hsla(19, 64%, 24%, 0.1);
+    box-shadow: 0 4px 10px rgba(35, 99, 131, 0.15), 0 1px 4px rgba(0, 0, 0, 0.1);
     display: inline-flex;
     padding: 0.35rem 0.5rem;
     border-radius: 0.25rem;
