@@ -41,4 +41,11 @@ const scrollUp = () => {
     }
 }
 
+const themeButton = document.getElementById('theme-button');
+themeButton.addEventListener('click', (e) => {
+    document.body.classList.toggle('dark-theme');
+    themeButton.classList.replace('fa--moon', 'fa-sun');
+    localStorage.setItem('theme', 'dark-theme')
+})
+
 window.addEventListener('scroll', scrollUp)

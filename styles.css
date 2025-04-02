@@ -10,6 +10,8 @@
     --eastern-blue: #0dbcd5;
     --white-smoke: #fefffb;
     --light-gray: #d1d1d1;
+    --space: #1a1a1a;
+    --stardust: #8a8889;
 
     --primary-color: var(--perfume);
     --primary-color-alt: var(--affair);
@@ -94,6 +96,17 @@ img {
     cursor: pointer;
     transition: color 0.3s;
     transform: rotate(245deg);
+}
+
+body.dark-theme {
+    --primary-color: var(--elm);
+    --primary-color-alt: var(--affair);
+    --title-color: var(--perfume);
+    --text-color: var(--light-gray);
+    --text-color-light: var(--white-smoke);
+    --body-color: var(--space);
+    --container-color: var(--stardust);
+    --accent-color: var(--atlantis);
 }
 
 .container {
