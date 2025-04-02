@@ -155,6 +155,7 @@ img {
     color: var(--carrot-orange);
     -webkit-text-stroke: 2px var(--night-rider);
     text-shadow: 6px 6px 0 var(--battleship-gray);
+    text-align: center;
 }
 
 @media screen and (max-width: 340px) {
