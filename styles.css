@@ -309,10 +309,8 @@ img {
 
 .nav__img-1 {
     position: absolute;
-    opacity: 0.5;
     width: 100px;
-    top: -2rem;
-    left: -2rem;
+    top: 0;
 }
 
 @media screen and (min-width: 768px) {
