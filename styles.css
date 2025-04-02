@@ -18,20 +18,22 @@
 :root {
     --header-height: 3.5rem;
 
-    /* HSL color mode */
-    --denim: #174DC3;
-    --carrot-orange: #F29323;
-    --night-rider: #261812;
-    --battleship-gray: #899478;
+    --perfume: #AC9DF9;
+    --elm: #236383;
+    --atlantis: #96CF28;
+    --affair: #693C78;
+    --eastern-blue: #0dbcd5;
+    --white-smoke: #fefffb;
+    --light-gray: #d1d1d1;
 
-    --primary-color: var(--denim); /* Deep base color for backgrounds */
-    --primary-color-alt: var(--battleship-gray); /* Muted alternative */
-    --title-color: var(--night-rider); /* Strong contrast for titles */
-    --text-color: var(--battleship-gray); /* Readable, neutral text */
-    --text-color-light: #D1D1D1; /* Lighter gray for subtle text */
-    --body-color: #FAF8F5; /* Soft off-white for warmth */
-    --container-color: #FFFFFF; /* Clean, standard container background */
-    --accent-color: var(--carrot-orange); /* Bold, vibrant contrast for highlights */
+    --primary-color: var(--perfume);
+    --primary-color-alt: var(--affair);
+    --title-color: var(--atlantis);
+    --text-color: var(--affair);
+    --text-color-light: var(--light-gray);
+    --body-color: var(--white-smoke);
+    --container-color: var(--eastern-blue);
+    --accent-color: var(--elm);
 
     --body-font: "Poppins", sans-serif;
     --title-font: "Titan One", cursive;
@@ -152,10 +154,7 @@ img {
     font-size: var(--font-xl);
     font-weight: bold;
     margin-bottom: 1.5rem;
-    color: var(--carrot-orange);
-    -webkit-text-stroke: 2px var(--night-rider);
-    text-shadow: 6px 6px 0 var(--battleship-gray);
-    text-align: center;
+    -webkit-text-stroke: 2px var(--affair);
 }
 
 @media screen and (max-width: 340px) {
@@ -169,7 +168,7 @@ img {
     font-family: var(--subtitle-font), serif;
     font-size: var(--font-lg);
     font-weight: var(--font-semi-bold);
-    color: var(--primary-color);
+    color: var(--primary-color-alt);
     margin-bottom: 0.5rem;
 }
 
@@ -396,7 +395,9 @@ img {
     background-color: var(--primary-color);
     padding: 1rem 1.5rem;
     border-radius: 4rem;
+    border: 2px solid var(--primary-color);
     color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
     font-weight: var(--font-medium);
     transition: background-color 0.3s;
 }
@@ -498,8 +499,8 @@ img {
     width: 150px;
     align-self: flex-start;
     position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
+    top: 0;
+    left: 0;
     transition: transform 0.4s;
 }
 
@@ -507,6 +508,7 @@ img {
     font-size: var(--font-lg);
     font-weight: var(--font-semi-bold);
     margin-block: 3rem 0.25rem;
+    color: var(--body-color);
 }
 
 .popular__description {
@@ -517,7 +519,7 @@ img {
 .popular__price {
     font-size: var(--font-md);
     font-weight: var(--font-medium);
-    color: var(--primary-color);
+    color: var(--body-color);
 }
 
 .popular__button {
@@ -532,6 +534,22 @@ img {
 
 .popular__card:hover, .popular__button {
     background-color: var(--primary-color-alt);
+
+    .popular__description {
+        color: var(--body-color);
+    }
+
+    .popular__name, .popular__price {
+        color: var(--title-color);
+    }
+
+    .popular__button {
+        background-color: var(--body-color);
+
+        i {
+            color: var(--title-color);
+        }
+    }
 }
 
 .popular__card:hover, .popular__img {
@@ -540,6 +558,17 @@ img {
 
 .recently-added__container {
     row-gap: 4rem;
+}
+
+.popular__data {
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .popular__data {
+        order: 1;
+        text-align: initial;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -567,7 +596,7 @@ img {
 
 .newsletter__container {
     position: relative;
-    background-color: hsl(19, 24%, 15%);
+    background-color: var(--container-color);
     border-radius: 2.5rem;
     padding: 5rem 1rem 3rem;
     text-align: center;
@@ -596,8 +625,8 @@ img {
     .newsletter__img {
         width: 250px;
         position: absolute;
-        top: -4rem;
-        left: -6rem;
+        top: -2rem;
+        left: -1rem;
     }
 }
 
@@ -802,7 +831,7 @@ img {
     padding: 0.35rem 0.5rem;
     border-radius: 0.25rem;
     font-size: 1rem;
-    color: var(--primary-color);
+    color: var(--body-color);
     z-index: 1000;
     transition: bottom 0.3s, transform 0.3s, background 0.4s;
 }
