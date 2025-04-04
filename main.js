@@ -105,3 +105,15 @@ const scrollReveal = ScrollReveal({
 
 scrollReveal.reveal('.home__img');
 scrollReveal.reveal('.home__data', {origin: 'bottom'});
+
+scrollReveal.reveal('.about__data', {origin: 'left'});
+scrollReveal.reveal('.about__img', {origin: 'right'});
+
+scrollReveal.reveal('.popular__card', {interval: '100'});
+
+scrollReveal.reveal('.recently-added__data', {origin: 'left'});
+scrollReveal.reveal('.recently-added__img', {origin: 'right'});
+
+scrollReveal.reveal('.newsletter');
+
+scrollReveal.reveal('.footer');
