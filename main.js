@@ -1,7 +1,7 @@
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
-const navLink = document.querySelectorAll('.nav__link');
+const navLinks = document.querySelectorAll('.nav__link');
 
 if (navToggle) {
     navToggle.addEventListener('click', () => {
@@ -15,14 +15,14 @@ if (navClose) {
     });
 }
 
-navLink.forEach(link => link.addEventListener('click', () => {
-    navMenu.classList.remove('show-menu');
-}));
+navLinks.forEach(link => {
+    link.addEventListener('click', () => navMenu.classList.remove('show-menu'));
+});
 
 const scrollHeader = () => {
     const header = document.getElementById('header');
 
-    if (this.scrollY >= 50) {
+    if (window.scrollY >= 50) {
         header.classList.add('bg-header');
     } else {
         header.classList.remove('bg-header');
@@ -32,24 +32,19 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 const activeLink = () => {
-    const section = document.querySelectorAll('section');
-    const navLink = document.querySelectorAll('.nav__link');
-
+    const sections = document.querySelectorAll('section');
     let current = 'home';
 
-    section.forEach(section => {
+    sections.forEach(section => {
         const sectionTop = section.offsetTop;
 
-        if (scrollY >= sectionTop - 60) {
-            current = section.getAttribute('id')
+        if (window.scrollY >= sectionTop - 60) {
+            current = section.getAttribute('id');
         }
     });
 
-    navLink.forEach(link => {
-        link.classList.remove('active-link');
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active-link');
-        }
+    navLinks.forEach(link => {
+        link.classList.toggle('active-link', link.getAttribute('href').includes(current));
     });
 }
 
@@ -58,7 +53,7 @@ window.addEventListener('scroll', activeLink);
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up');
 
-    if (this.scrollY >= 350) {
+    if (window.scrollY >= 350) {
         scrollUp.classList.add('show-scroll');
     } else {
         scrollUp.classList.remove('show-scroll');
@@ -66,6 +61,14 @@ const scrollUp = () => {
 }
 
 window.addEventListener('scroll', scrollUp)
+
+document.getElementById('scroll-up').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 const themeButton = document.getElementById('theme-button');
 
