@@ -94,3 +94,14 @@ function lightMode() {
     themeButton.classList.replace('fa-sun', 'fa-moon');
     localStorage.setItem('theme', 'light-theme')
 }
+
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    reset: true
+});
+
+scrollReveal.reveal('.home__img');
+scrollReveal.reveal('.home__data', {origin: 'bottom'});
