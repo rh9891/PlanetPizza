@@ -50,9 +50,9 @@ THEN the website will switch between dark and light modes
 
 ## Preview of Planet Pizza
 
-![Planet Pizza Light Mode Landing Page]()
+![Planet Pizza Light Mode Landing Page](https://github.com/user-attachments/assets/1997fed3-78f2-4a8b-a262-b4194f06e2b5)
 
-![Planet Pizza Dark Mode Landing Page]()
+![Planet Pizza Dark Mode Landing Page](https://github.com/user-attachments/assets/572c8d2d-8092-4494-89f9-6c26a66f6c79)
 
 The following animation demonstrates the complete application functionality:
 
