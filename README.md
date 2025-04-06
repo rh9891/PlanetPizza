@@ -18,11 +18,9 @@
 
 ## Description
 
-Planet Pizza is a fun and interactive pizza-themed website that allows users to
-explore the pizza menu, see information about pizza options, and interact with various sections through a smooth,
-engaging interface. The website incorporates modern HTML, CSS, and JavaScript for a dynamic user experience.
+Planet Pizza is a fun and interactive pizza-themed website that allows users to explore the pizza menu, view details about various options, and engage with different sections through a smooth, dynamic interface. The website is built using modern HTML, CSS, and JavaScript to deliver a responsive and visually appealing user experience.
 
-Key features include a navigation menu that opens with a hamburger icon, smooth scrolling, and a dark mode toggle.
+Key features include a responsive navigation menu that opens with a hamburger icon (in smaller devices), smooth scrolling between sections, a dark mode toggle, and animated content that fades or slides into view using ScrollReveal.js, enhancing the overall interactivity and polish of the site.
 
 ## User Story
 
@@ -37,15 +35,19 @@ SO THAT I can choose what to order
 ```
 GIVEN a landing page for a pizza restaurant
 WHEN I click on the hamburger menu icon
-THEN I will see a navigation menu with options for various sections
+THEN I will see a navigation menu with options for various sections.
 
 GIVEN a website with a menu
 WHEN I click on a menu item
-THEN I will be directed to the section with more information about that item
+THEN I will be directed to the section with more information about that item.
 
 GIVEN the option to change the theme
 WHEN I toggle the theme button
-THEN the website will switch between dark and light modes
+THEN the website will switch between dark and light modes.
+
+GIVEN that I scroll down the page
+WHEN I scroll past a certain point
+THEN a scroll-up button will appear allowing me to quickly return to the top with a smooth scroll.
 ```
 
 ## Preview of Planet Pizza
