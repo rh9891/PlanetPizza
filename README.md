@@ -60,7 +60,7 @@ The following animation demonstrates the complete application functionality:
 
 ## Links
 
-- [Deployed Application](https://planet-pizza.netlify.app)
+- [Deployed Application](https://eat-planet-pizza.netlify.app)
 -
 - [Github Repository](https://github.com/rh9891/PlanetPizza)
 
