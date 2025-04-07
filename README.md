@@ -58,7 +58,7 @@ THEN a scroll-up button will appear allowing me to quickly return to the top wit
 
 The following animation demonstrates the complete application functionality:
 
-![Planet Pizza Preview]()
+![Planet Pizza Preview](https://github.com/user-attachments/assets/96e0b45c-3772-4944-a305-9e6e87629e63)
 
 ## Links
 
